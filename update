@@ -17,7 +17,7 @@ def call(command):
     return subprocess.call(command, shell=True)
 
 def get_branch(refname):
-    return refname.split('/')[2]
+    return refname.split('/', 2)[2]
 
 def latest_branches_commits(branches):
     latest = {}
